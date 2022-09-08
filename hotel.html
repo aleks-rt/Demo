@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link href="general-style.css" rel="stylesheet"/>
+    <link href="hotel-style.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <img width="180px" class="icon" alt="icon" src="icon.png"/>
+            <div>
+                <div class="search">
+                    <input class="button-search" type="text" id="search"/>
+                    <button class="btn-search">Поиск</button>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <div style="position: relative;">
+                    <button class="menu">Меню</button>
+                    <div class="burger-line first"></div>
+                    <div class="burger-line second"></div>
+                    <div class="burger-line third"></div>
+                    <div class="burger-line fourth"></div>
+                </div>
+
+                <div class="submenu">
+                    <button>Личный кабинет</button>
+                    <button>Выйти</button>
+                    <button>Помощь</button>
+                </div> 
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="hotel-info">
+            <div class="hotel-info-text">
+
+                <div class="info-text">
+                    <h2 class="hotel-name">Grand Oasis Resort</h2>
+                    <p>Прекрасный отель с видом на море</p>
+                    <p><strong>4400</strong> рублей за ночь</p>
+                </div>
+
+                <div class="container-accordion">
+                    <button class="accordion">Показать еще > </button>
+                    <div class="panel">
+                        <p class="pane-text">Тут должен быть текст, но я его не придумала :) </p>
+                    </div>
+                </div>
+
+                
+                
+                <div class="liked">
+                    <input id="toggle-heart" type="checkbox">
+                    <label for="toggle-heart" aria-label="like">Сохранить 
+                        <svg version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                            <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                            c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                            l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                            C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                            s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                            c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                            C444.801,187.101,434.001,213.101,414.401,232.701z"/>
+                        </svg>
+                    </label>
+                </div>
+                
+
+            </div>
+
+            <div class="container-photo">
+                <div id="pics">
+                    <img class="hotel-img" width="600px" src="hotel-photo/отель1.jpeg"/>
+                </div>
+                <button id="next-photo" сlass="btn"> > </button>
+            </div>
+
+        </div>
+
+        <hr/>
+
+        <h2>Какие удобства вас ждут</h2>
+
+        <div class="body-hotel">
+
+            <div class="card">
+                <table class="table-card">
+                    <tr>
+                        <td><img width="40" src="table/food.png"></td>
+                        <td>Кухня: все включено</td>
+                   </tr>
+                    <tr>
+                        <td><img width="40" src="table/swimming-pool.png"></td>
+                        <td>Бассейн на территории отеля</td>
+                    </tr>
+    
+                    <tr>
+                        <td><img width="40" src="table/conditioner.png"></td>
+                        <td>Кондиционер в номере</td>
+                    </tr>
+    
+                    <tr>
+                        <td><img width="40" src="table/tv.png"></td>
+                        <td>Телевизор в номере</td>
+                    </tr>
+    
+                    <tr>
+                        <td><img width="40" src="table/bar.png"></td>
+                        <td>Безлимитный бар</td>
+                    </tr>
+    
+                    <tr>
+                        <td><img width="40" src="table/pets.png"></td>
+                        <td>Можно с животными</td>
+                    </tr>
+    
+                </table>
+            </div>
+
+            <div class="card2">
+                <table class="table-card-2">
+                    <tr>
+                        <td><img width="40" src="table/wi-fi.png"></td>
+                        <td>WI-FI в лобби</td>
+                   </tr>
+                    <tr>
+                        <td><img width="40" src="table/sea.png"></td>
+                        <td>Вид на море</td>
+                    </tr>
+    
+                </table>
+            </div>
+    
+            <div class="form">
+                <div class="form-data">
+                    <div class="data-start">
+                        <label class="label-start" for="start">Прибытие:</label>
+                        <input class="input-start" type="date" id="start" name="trip-start" value="2022-07-01" min="2022-09-01" max="2024-09-01">
+                    </div>
+                   
+                    <div class="data-end">
+                        <label class="label-end" for="end">Выезд:</label>
+                        <input class="input-end" type="date" id="end" name="trip-end" value="2022-07-01" min="2022-09-01" max="2024-09-01">
+                    </div>
+                </div>
+        
+                <div class="amout-people">
+                    <p class="p-amount">Количество гостей</p>
+                    <div class="number-of-people">
+                        <p class="p-amount">Взрослые:</p>
+                        <div class="form_radio-1">
+                            <input id="radio-1-1" type="radio" name="radio1" value="1.1" checked>
+                            <label for="radio-1-1">1</label>
+                        </div>
+                        <div class="form_radio-1">
+                            <input id="radio-2-1" type="radio" name="radio1" value="2.1" checked>
+                            <label for="radio-2-1">2</label>
+                        </div>
+                        <div class="form_radio-1">
+                            <input id="radio-3-1" type="radio" name="radio1" value="3.1" checked>
+                            <label for="radio-3-1">3</label>
+                        </div>
+                        <div class="form_radio-1">
+                            <input id="radio-4-1" type="radio" name="radio1" value="4.1" checked>
+                            <label for="radio-4-1">4</label>
+                        </div>
+                        <div class="form_radio-1">
+                            <input id="radio-5-1" type="radio" name="radio1" value="5.1" checked>
+                            <label for="radio-5-1">5</label>
+                        </div>
+                    </div>
+         
+                    <div class="number-of-childs">
+                        <p class="p-amount">Дети:</p>
+                        <div class="form_radio-2">
+                            <input id="radio-1-2" type="radio" name="radio2" value="1.2" checked>
+                            <label for="radio-1-2">1</label>
+                        </div>
+                        <div class="form_radio-2">
+                            <input id="radio-2-2" type="radio" name="radio2" value="2.2" checked>
+                            <label for="radio-2-2">2</label>
+                        </div>
+                        <div class="form_radio-2">
+                            <input id="radio-3-2" type="radio" name="radio2" value="3.2" checked>
+                            <label for="radio-3-2">3</label>
+                        </div>
+                        <div class="form_radio-2">
+                            <input id="radio-4-2" type="radio" name="radio2" value="4.2" checked>
+                            <label for="radio-4-2">4</label>
+                        </div>
+                        <div class="form_radio-2">
+                            <input id="radio-5-2" type="radio" name="radio2" value="5.2" checked>
+                            <label for="radio-5-2">5</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="form_radio-3">
+                        <input id="radio-2-3" type="radio" name="radio3" value="1.3" checked>
+                        <label for="radio-2-3">С возвратом средств</label>
+                    </div>
+                    <div class="form_radio-3">
+                        <input id="radio-3-3" type="radio" name="radio3" value="2.3" checked>
+                        <label for="radio-3-3">Без возврата средств</label>
+                    </div>
+                </div>
+        
+                <div class="check-button">
+                    <button class="check-data">Проверить свободные даты</button>
+                </div>    
+            </div>
+        </div>
+
+        
+        <br/>
+        <br/>
+
+        <div class="map-container">
+            <h2>Где вы будете</h2>
+
+            <div class="map" style="position:relative;overflow:hidden;">
+                <a href="https://yandex.ru/maps/org/grand_oasis_resort/32286973783/?utm_medium=mapframe&utm_source=maps" 
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Grand Oasis Resort</a>
+                <a href="https://yandex.ru/maps/11487/sharm-el-sheikh/category/hotel/184106414/?utm_medium=mapframe&utm_source=maps" 
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Гостиница в Шарм‑эль‑Шейхе</a>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCURvOetGD" 
+                width="100%" height="400px" frameborder="0" allowfullscreen="true" 
+                style="position:relative;"></iframe>
+            </div>
+        </div>
+
+        
+
+
+
+    </div>
+
+
+
+    <script src="hotel-code.js"></script>
+    <script src="general-code.js"></script>
+
+</body>
+</html>

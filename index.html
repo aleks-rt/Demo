@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margarita Alexeeva</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="general-style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+
+        <div class="top">
+            <img width="180px" class="icon" alt="icon" src="icon.png"/>
+            <div>
+                <div class="search">
+                    <input class="button-search" type="text" id="search"/>
+                    <button class="btn-search">Поиск</button>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <div style="position: relative;">
+                    <button class="menu">Меню</button>
+                    <div class="burger-line first"></div>
+                    <div class="burger-line second"></div>
+                    <div class="burger-line third"></div>
+                    <div class="burger-line fourth"></div>
+                </div>
+
+                <div class="submenu">
+                    <button>Личный кабинет</button>
+                    <button>Выйти</button>
+                    <button>Помощь</button>
+                </div> 
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="table">
+
+            <table class="top-table">
+                <tr>
+                    <td> <img width="40" src="general-table/flat.png"> </td>
+                    <td> <img width="40" src="general-table/rich-flat.png"> </td>
+                    <td> <img width="40" src="general-table/one-day.png"> </td>
+                    <td> <img width="40" src="general-table/house.png"> </td>
+                    <td> <img width="40" src="general-table/lake.png"> </td>
+                    <td> <img width="40" src="general-table/camping.png"> </td>
+                    <td> <img width="40" src="general-table/beach.png"> </td>
+                </tr>
+                <tr class="choice">
+                    <td class="choice-text" data-id="flat">Квартиры</td>
+                    <td class="choice-text" data-id="rich">Дорогой ремонт</td>
+                    <td class="choice-text" data-id="one-time">Посуточно</td>
+                    <td class="choice-text" data-id="house">Дома</td>
+                    <td class="choice-text" data-id="house-near-lake">Дома у озера</td>
+                    <td class="choice-text" data-id="kemp">Кемпинги</td>
+                    <td class="choice-text" data-id="near-beach">Рядом пляж</td>
+            
+                </tr>
+
+            </table>
+
+            <button class="filter">Фильтры</button>
+        </div>
+
+
+        <button class="button-show-map">Показать карту</button>
+
+        <div class="all-hotels">
+
+            <div class="items flat rich one-time">
+                <a href="hotel.html" target="_blank">
+                    <div class="hotel">
+                        <img class="photo" width="300" src="all-hotels/Group1.jpeg"/>
+                        <h4 class="name-of-hotel">Уютная квартира</h4>
+                        <p>Москва</p>
+                        <p class="hotel-price">4400р/ночь</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="items rich one-time house">
+                <a href="hotel.html" target="_blank">
+                    <div class="hotel">
+                        <img class="photo" width="300" src="all-hotels/Group2.jpeg"/>
+                        <h4 class="name-of-hotel">Дом в лесу</h4>
+                        <p>Ленинградская область</p>
+                        <p class="hotel-price">7000р/ночь</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="items one-time house house-near-lake">
+                <a href="hotel.html" target="_blank">
+                    <div class="hotel">
+                        <img class="photo" width="300" src="all-hotels/Group3.jpeg"/>
+                        <h4 class="name-of-hotel">Дом на берегу озера</h4>
+                        <p>Мурманская область</p>
+                        <p class="hotel-price">4000р/ночь</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="items near-beach hostel">
+                <a href="hotel.html" target="_blank">
+                    <div class="hotel">
+                        <img class="photo" width="300" src="all-hotels/Group4.jpeg"/>
+                        <h4 class="name-of-hotel">Grand Oasis Resort</h4>
+                        <p>Египет</p>
+                        <p class="hotel-price">4400р/ночь</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="items near-beach hostel">
+                <a href="hotel.html" target="_blank">
+                    <div class="hotel">
+                        <img class="photo" width="300" src="all-hotels/Group5.jpeg"/>
+                        <h4 class="name-of-hotel">Отель с видом на пляж</h4>
+                        <p>Бали</p>
+                        <p class="hotel-price">3300р/ночь</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="items flat one-time">
+                <a href="hotel.html" target="_blank">
+                    <div class="hotel">
+                        <img class="photo" width="300" src="all-hotels/Group6.jpeg"/>
+                        <h4 class="name-of-hotel">Квартира</h4>
+                        <p>Санкт-Петербург</p>
+                        <p class="hotel-price">1000р/ночь</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="items flat rich one-time">
+                <a href="hotel.html" target="_blank">
+                    <div class="hotel">
+                        <img class="photo" width="300" src="all-hotels/Group7.jpeg"/>
+                        <h4 class="name-of-hotel">Квартира</h4>
+                        <p>Италия</p>
+                        <p class="hotel-price">6000р/ночь</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="items one-time kemp">
+                <a href="hotel.html" target="_blank">
+                    <div class="hotel">
+                        <img class="photo" width="300" src="all-hotels/Group8.jpeg"/>
+                        <h4 class="name-of-hotel">Кемпинг в горах</h4>
+                        <p>Иркутская область</p>
+                        <p class="hotel-price">1500р/ночь</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="items one-time house house-near-lake">
+                <a href="hotel.html" target="_blank">
+                    <div class="hotel">
+                        <img class="photo" width="300" src="all-hotels/Group9.jpeg"/>
+                        <h4 class="name-of-hotel">Деревянный дом у озера</h4>
+                        <p>Финляндия</p>
+                        <p class="hotel-price">4000р/ночь</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="items rich one-time near-beach hostel">
+                <a href="hotel.html" target="_blank">
+                    <div class="hotel">
+                        <img class="photo" width="300" src="all-hotels/Group10.jpeg"/>
+                        <h4 class="name-of-hotel">Burj Al Arab</h4>
+                        <p>Дубаи</p>
+                        <p class="hotel-price">110000р/ночь</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="items one-time kemp">
+                <a href="hotel.html" target="_blank">
+                    <div class="hotel">
+                        <img class="photo" width="300" src="all-hotels/Group11.jpeg"/>
+                        <h4 class="name-of-hotel">Кемпинг в горах</h4>
+                        <p>Алтай</p>
+                        <p class="hotel-price">1500р/ночь</p>
+                    </div>
+                </a>
+            </div>
+
+        
+        </div>
+
+        
+
+ 
+
+
+    </div>
+
+    <div class="footer">
+        <hr/>
+        <footer class="foot">
+            <span>2022 Airbnb, Inc</span>
+            <span>·</span>
+            <a>Конфиденциальность</a>
+            <span>·</span>
+            <a>Условия</a>
+            <span>·</span>
+            <a>Карта сайта</a>
+            <span>·</span>
+            <a>Реквизиты компании</a>
+        </footer>
+    </div>
+
+
+    <div class="popup">
+        <div class="popup__container">
+            <div class="button-close">
+                <button class="button-close-popup">×</button>
+            </div>
+            <div class="popup__wrapper">
+                <div id="blablabla">
+                    <div>
+                        <h3 id="min-max-price">Ценовой диапазон</h3>
+                        <div>
+                            <label>Минимальная цена за ночь:</label>
+                            <input type="range" id="min-price" class="slider" name="min-ptice" min="0" max="10000">
+                            <p><span id="demo1"></span> ₽ за ночь</p>
+                        </div>
+                        <div>
+                            <label>Максимальная цена за ночь:</label>
+                            <input type="range" id="max-price" class="slider" name="max-ptice" min="0" max="10000">
+                            <p><span id="demo2"></span> ₽ за ночь</p>
+                        </div>
+                        <hr>
+                        <h3 id="type-of-house">Тип жилья</h3>
+
+                        <div>
+                            <label>
+                                <input type='checkbox' name="house-check" id="house-check">
+                                <span></span>
+                                Дом
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type='checkbox' name="flat-check" id="flat-check">
+                                <span></span>
+                                Квартира
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type='checkbox' name="hotel-check" id="hotel-check">
+                                <span></span>
+                                Отель
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type='checkbox' name="hotel-check" id="kemp-check">
+                                <span></span>
+                                Палатка
+                            </label>
+                        </div>
+
+                        <hr>
+                        <h3>Комнаты и кровати</h3>
+                        <div class="number-of-rooms">
+                            <p>Комнаты</p>
+                            <button class="button-selected not-selected-element">Неважно</button>
+                            <button class="button-selected not-selected-element">1</button>
+                            <button class="button-selected not-selected-element">2</button>
+                            <button class="button-selected not-selected-element">3</button>
+                            <button class="button-selected not-selected-element">4</button>
+                            <button class="button-selected not-selected-element">5</button>
+                        </div>
+                        <div class="number-of-beds">
+                            <p>Кровати</p>
+                            <button class="button-selected not-selected-element">Неважно</button>
+                            <button class="button-selected not-selected-element">1</button>
+                            <button class="button-selected not-selected-element">2</button>
+                            <button class="button-selected not-selected-element">3</button>
+                            <button class="button-selected not-selected-element">4</button>
+                            <button class="button-selected not-selected-element">5</button>
+                        </div>
+
+                        <hr>
+                    
+                        <a>        
+                            <button class="search-hotels">Искать</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+     
+
+
+    
+      <script src="code.js"></script>
+      <script src="general-code.js"></script>
+</body>
+</html>

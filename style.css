@@ -1,0 +1,401 @@
+
+/* таблица под верушкой с выбором */
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+
+    .table {
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+
+    .top-table img {
+        width: 30px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .table {
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 8px;
+    }
+
+    .top-table img {
+        width: 25px;
+    }
+
+}
+
+/* кнопка фильтра */
+
+.filter {
+    cursor: pointer;
+    border-radius: 21px;
+    border: 0;
+    background: pink;
+    transition-duration: 0.4s;
+}
+
+@media(max-width: 700px) {
+    .filter {
+        margin-top: 20px;
+    }
+}
+
+
+/* настройка таблицы */
+
+
+.top-table {
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    table-layout: fixed;
+}
+
+.choice-text {
+    position: relative;
+}
+
+.choice td:hover {
+    cursor: pointer;
+}
+
+.choice-text::after {
+    position: absolute;
+    left: 25%;
+    width: 0;
+    bottom: -7px;
+    content: "";
+    height: 2px;
+    display: block;
+    background-color: black;
+    color: black;
+    transition: width 0.3s ease-in;
+
+}
+
+.choice-text:hover::after {
+    width: 50%;
+}
+
+/* настройка футера */
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    color: grey; 
+    background: white;
+}
+
+@media(max-width: 700px) {
+    .footer {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foot {
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .foot {
+        display: block;
+    }
+}
+
+/* тело странички с отелями */
+
+.all-hotels {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: space-between;
+    
+}
+
+@media(max-width: 700px) {
+    .all-hotels {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+
+.photo {
+    border-radius: 21px;
+}
+
+.photo:hover {
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+
+}
+
+.hotel {
+    margin-bottom: 40px;
+}
+
+.hotel:hover {
+    cursor: pointer;
+}
+
+.all-hotels h4:hover {
+    text-decoration: underline;
+}
+
+.all-hotels a {
+    color:rgb(20, 20, 20);
+    text-decoration: none;
+}
+
+@media(max-width: 320px) {
+    .all-hotels img {
+        width: 250px;
+    }
+}
+
+
+/*окно фильтра*/
+
+
+#blablabla {
+    display: none;
+    
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+  
+#blablabla.open {
+    display: block;
+}
+  
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.5);
+    transition: all 0.5s ease;
+    display: none;
+    font-size: 16px;
+    z-index: 2;
+}
+  
+.popup_open {
+    display: block;
+}
+  
+.popup__container {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    max-width: 588px;
+    max-height: 800px;
+    width: 100%;
+    border: none;
+}
+
+@media(max-width: 800px) {
+    .popup__container {
+        max-width: 350px;
+        max-height: 550px;
+    }
+}
+
+@media(max-width: 320px) {
+    .popup__container {
+        max-width: 250px;
+        max-height: 500px;
+    }
+}
+
+@media(max-height: 600px) {
+    .popup__container {
+        max-width: 400px;
+        max-height: 500px;
+    }
+}
+  
+.popup__wrapper {
+    padding: 40px;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+#min-max-price {
+    margin-top: 0px;
+}
+
+#type-of-house {
+    margin-top: 0px;
+}
+
+.popup hr {
+    margin-bottom: 20px;
+}
+
+.number-of-rooms button {
+    cursor: pointer;
+    border: 1px solid pink;
+    border-radius: 21px;
+    transition-duration: 0.4s;
+}
+
+.number-of-rooms button:active {
+    background: pink;
+}
+
+.number-of-beds button {
+    cursor: pointer;
+    border: 1px solid pink;
+    border-radius: 21px;
+    transition-duration: 0.4s;
+}
+
+.number-of-beds button:active {
+    background: pink;
+}
+
+.search-hotels {
+    background: pink;
+    border: 1px solid pink;
+    border-radius: 21px;
+    font-size: 17px;
+}
+
+.selected-element {
+    background: pink;
+}
+
+.not-selected-element {
+    background: white;
+}
+
+.slider {
+    display: inline;
+    -webkit-appearance:unset;
+    height: 10px;
+    background: linear-gradient(rgb(253, 223, 228), pink) fixed;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    width: 60%;
+    border-radius: 21px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 21px;
+    background: linear-gradient(rgb(255, 209, 217), rgb(255, 174, 187)) fixed;
+    cursor: pointer;
+}
+
+
+
+ /* изменяет стиль чек бокса */
+
+label input {
+    display: none;
+}
+
+label span {
+    height: 12px;
+    width: 12px;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    background-color:white;
+    border-radius: 3px;
+    padding:3px;
+}
+
+[type=checkbox]:checked + span:before {
+    content: '\2714';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    font-size:20px;
+    color:pink;
+}
+
+@media(max-width:500px) {
+    [type=checkbox]:checked + span:before {
+        content: '\2714';
+        position: absolute;
+        top: 0px;
+        left: 0;
+        font-size:13px;
+        color:pink;
+    }
+}
+
+.selected-element:hover {
+    opacity: 0.9;
+    background-color: pink;
+    border: 1.5px solid pink;
+    color: black;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button-close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: pink;
+    border: 0;
+    border-radius: 21px;
+    font-size: 25px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+@media(max-width: 700px) {
+    #next-photo {
+        right: 1px;
+    }
+}
+
+
